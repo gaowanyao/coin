@@ -44,6 +44,7 @@ const static char* HASH_GENESIS_BLOCK = "000000ea85337c6e8181db69eb6e8adfd94b8e0
 const static char* HASH_MERKLE_ROOT = "8963749ad935e706355f3ad9ffddb136047d497192fa4c7ff769cb7bd7a3af4a";
 
 
+
 /*DNSSEEDS*/
 //const static char*DNSSEEDS1= "120.92.35.170";
 //const static char*DNSSEEDS2="120.92.35.170";
