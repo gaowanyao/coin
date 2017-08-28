@@ -12,8 +12,11 @@ util.h
 /*
 common
 */
-const static char* TIME_STAMP =  "Chester Bennington committed suicide on 20th July., 2017";
+const static char* TIME_STAMP =  "I love you forever,2017,08,26";
 const static char* PUBLIC_KEY = "04678afdb0fe5548271967f1a67130b7105cd6a828e03909a67962e0ea1f61deb649f6bc3f4cef38c4f35504e51ec112de5c384df7ba0b8d578a4c702b6bf11d5f";
+// PUBLIC_KEY 不用修改
+
+
 
 /*
 Main Net
@@ -21,32 +24,37 @@ Main Net
 
 /*chainparams.cpp*/
 const static int HALVING_INTERVAL =  100;
-const static int POW_TARGET_TIMESPAWN = 60 * 60 * 24 * 356 ;
+const static int POW_TARGET_TIMESPAWN = 60 * 60 * 24 * 365 ;
 const static int POW_TARGET_SPACING = 2 * 60;
 const static bool POW_ALLOW_MIN_DIFFICULTY_BLOCKS = false;
-const static int MESSAGE_START_0 = 0x90;
-const static int MESSAGE_START_1 = 0x0d;
-const static int MESSAGE_START_2 = 0x23;
-const static int MESSAGE_START_3 = 0x34;
-const static int DEFAULT_PORT = 19939;
+const static int MESSAGE_START_0 = 0x80;
+const static int MESSAGE_START_1 = 0x1d;
+const static int MESSAGE_START_2 = 0x25;
+const static int MESSAGE_START_3 = 0x35;
+const static int DEFAULT_PORT = 25535;
 
-const static int NTIME =  1500501600;
-const static int NNOUNCE = 57739874;
-const static int NBITS = 0x1d0fffff;
+const static int NTIME =  1503715666;
+const static int NNOUNCE = 8293141;
+const static int NBITS = 0x1e01ffff;
 const static int NREWORD = 100;
-const static char* HASH_GENESIS_BLOCK = "0x000000099d7c18fee4c186a9f508d313171bb5a0072aa5114eda626a804e85aa";
-const static char* HASH_MERKLE_ROOT = "0x73fa1ad6feb743057cd613e47c62d0e909d880f7ab83a6a7e31d68a47a399462";
+// const static char* HASH_GENESIS_BLOCK = "0x000000099d7c18fee4c186a9f508d313171bb5a0072aa5114eda626a804e85aa";
+// const static char* HASH_MERKLE_ROOT = "0x73fa1ad6feb743057cd613e47c62d0e909d880f7ab83a6a7e31d68a47a399462";
+
+const static char* HASH_GENESIS_BLOCK = "000000ea85337c6e8181db69eb6e8adfd94b8e067d6d01c09456887feef4c3cf";
+const static char* HASH_MERKLE_ROOT = "8963749ad935e706355f3ad9ffddb136047d497192fa4c7ff769cb7bd7a3af4a";
+
+
 /*DNSSEEDS*/
 //const static char*DNSSEEDS1= "120.92.35.170";
 //const static char*DNSSEEDS2="120.92.35.170";
 const static char*DNSSEEDS1= "127.0.0.1";
 const static char*DNSSEEDS2="127.0.0.1";
 
-const static int nPUBKEY_ADDRESS = 44;
-const static int nSCRIPT_ADDRESS = 54;
-const static int nSECRET_KEY = 66;
+const static int nPUBKEY_ADDRESS = 35;
+const static int nSCRIPT_ADDRESS = 37;
+const static int nSECRET_KEY = 39;
 const static bool MINING_REQUIRES_PEERS = false;
-const static char* POW_LIMIT = "0x0000000ffffffffffffffffffffffffffffffffffffffffffffffffffffffffff";
+const static char* POW_LIMIT = "0x000000fffffffffffffffffffffffffffffffffffffffffffffffffffffffffff";
 /*TODO: CHECKPOINTS*/
 
 /*consensus/consensus.h*/
@@ -57,11 +65,11 @@ const static int REWORD_OF_MINING = 251257;
 
 /*util.h*/
 // directory name  named after the altcoin
-const static char* DATA_FILE_NAME =  "Tcash";
-const static char* DATA_FILE_NAME_UNIX =  ".tcash";
+const static char* DATA_FILE_NAME =  "ebo";
+const static char* DATA_FILE_NAME_UNIX =  ".ebo";
 
 /*TODO:qt default data path*/
 
-const static int RPC_PORT =  19938;
+const static int RPC_PORT =  25534;
 
 #endif // BITCOIN_ALTCOINPARAMS_H
