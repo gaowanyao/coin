@@ -12,7 +12,7 @@ util.h
 /*
 common
 */
-const static char* TIME_STAMP =  "I love you forever,2017,08,26";
+const static char* TIME_STAMP =  "This is the beginning,2017,08,29";
 const static char* PUBLIC_KEY = "04678afdb0fe5548271967f1a67130b7105cd6a828e03909a67962e0ea1f61deb649f6bc3f4cef38c4f35504e51ec112de5c384df7ba0b8d578a4c702b6bf11d5f";
 // PUBLIC_KEY 不用修改
 
@@ -27,21 +27,19 @@ const static int HALVING_INTERVAL =  100;
 const static int POW_TARGET_TIMESPAWN = 60 * 60 * 24 * 365 ;
 const static int POW_TARGET_SPACING = 2 * 60;
 const static bool POW_ALLOW_MIN_DIFFICULTY_BLOCKS = false;
-const static int MESSAGE_START_0 = 0x80;
+const static int MESSAGE_START_0 = 0x81;
 const static int MESSAGE_START_1 = 0x1d;
 const static int MESSAGE_START_2 = 0x25;
 const static int MESSAGE_START_3 = 0x35;
 const static int DEFAULT_PORT = 25535;
 
-const static int NTIME =  1503715666;
-const static int NNOUNCE = 8293141;
-const static int NBITS = 0x1e01ffff;
+const static int NTIME =  1503995185;
+const static int NNOUNCE = 33327120;
+const static int NBITS = 0x1d0fffff;
 const static int NREWORD = 100;
-// const static char* HASH_GENESIS_BLOCK = "0x000000099d7c18fee4c186a9f508d313171bb5a0072aa5114eda626a804e85aa";
-// const static char* HASH_MERKLE_ROOT = "0x73fa1ad6feb743057cd613e47c62d0e909d880f7ab83a6a7e31d68a47a399462";
 
-const static char* HASH_GENESIS_BLOCK = "000000ea85337c6e8181db69eb6e8adfd94b8e067d6d01c09456887feef4c3cf";
-const static char* HASH_MERKLE_ROOT = "8963749ad935e706355f3ad9ffddb136047d497192fa4c7ff769cb7bd7a3af4a";
+const static char* HASH_GENESIS_BLOCK = "0000000d42baca7fd3cbaff62578cb1de20e48fb26a5083d8d6b9ea631f32a7a";
+const static char* HASH_MERKLE_ROOT = "0583fa232455f218e718d3618219adad4657b5e13e58197490e025d818fcc965";
 
 
 
@@ -51,11 +49,11 @@ const static char* HASH_MERKLE_ROOT = "8963749ad935e706355f3ad9ffddb136047d49719
 const static char*DNSSEEDS1= "127.0.0.1";
 const static char*DNSSEEDS2="127.0.0.1";
 
-const static int nPUBKEY_ADDRESS = 35;
+const static int nPUBKEY_ADDRESS = 36;
 const static int nSCRIPT_ADDRESS = 37;
 const static int nSECRET_KEY = 39;
 const static bool MINING_REQUIRES_PEERS = false;
-const static char* POW_LIMIT = "0x000000fffffffffffffffffffffffffffffffffffffffffffffffffffffffffff";
+const static char* POW_LIMIT = "0x0000000ffffffffffffffffffffffffffffffffffffffffffffffffffffffffff";
 /*TODO: CHECKPOINTS*/
 
 /*consensus/consensus.h*/
