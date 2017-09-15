@@ -50,8 +50,9 @@ const static char*DNSSEEDS1= "127.0.0.1";
 const static char*DNSSEEDS2="127.0.0.1";
 
 const static int nPUBKEY_ADDRESS = 36;
-const static int nSCRIPT_ADDRESS = 37;
 const static int nSECRET_KEY = 39;
+const static int nSCRIPT_ADDRESS = 37;
+
 const static bool MINING_REQUIRES_PEERS = false;
 const static char* POW_LIMIT = "0x0000000ffffffffffffffffffffffffffffffffffffffffffffffffffffffffff";
 /*TODO: CHECKPOINTS*/
